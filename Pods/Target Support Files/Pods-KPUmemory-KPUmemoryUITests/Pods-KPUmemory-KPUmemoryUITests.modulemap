@@ -1,0 +1,6 @@
+framework module Pods_KPUmemory_KPUmemoryUITests {
+  umbrella header "Pods-KPUmemory-KPUmemoryUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

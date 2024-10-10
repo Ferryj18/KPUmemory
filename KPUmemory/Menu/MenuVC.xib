@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuVC" customModule="KPUmemory" customModuleProvider="target">
+            <connections>
+                <outlet property="btnExit" destination="ReK-Yh-HGp" id="KYY-4q-rNu"/>
+                <outlet property="btnFormEntry" destination="ND6-mb-gc2" id="36W-Cv-QJF"/>
+                <outlet property="btnInformation" destination="QzI-oy-j0n" id="hK8-tB-JfX"/>
+                <outlet property="btnListData" destination="i4x-ta-kpi" id="0iK-xL-tj9"/>
+                <outlet property="view" destination="Bla-yH-SSt" id="d4H-SL-n9d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Bla-yH-SSt">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-G7-knX">
+                    <rect key="frame" x="30" y="240" width="333" height="450"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzI-oy-j0n">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="vQV-XT-QsT"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND6-mb-gc2">
+                            <rect key="frame" x="0.0" y="80" width="333" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="XpW-Xx-kb5"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4x-ta-kpi">
+                            <rect key="frame" x="0.0" y="160" width="333" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="ckY-xo-yNh"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReK-Yh-HGp">
+                            <rect key="frame" x="0.0" y="240" width="333" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="wgk-fv-usX"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5c-Ee-4gZ">
+                            <rect key="frame" x="0.0" y="320" width="333" height="130"/>
+                            <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="HqC-HY-QWo"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6do-yV-uyf"/>
+            <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lRf-G7-knX" firstAttribute="leading" secondItem="6do-yV-uyf" secondAttribute="leading" constant="30" id="H3t-km-CGH"/>
+                <constraint firstItem="6do-yV-uyf" firstAttribute="trailing" secondItem="lRf-G7-knX" secondAttribute="trailing" constant="30" id="M4g-H0-IEs"/>
+                <constraint firstItem="6do-yV-uyf" firstAttribute="bottom" secondItem="lRf-G7-knX" secondAttribute="bottom" constant="128" id="hqH-FR-aYV"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+</document>

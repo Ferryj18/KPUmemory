@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="KPUmemory" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="BDx-OW-mji" id="cMs-Tr-ftd"/>
+                <outlet property="lblTItle" destination="Fk0-nr-jud" id="nEb-mz-Ydu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7CY-4B-ok5">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDx-OW-mji">
+                    <rect key="frame" x="20" y="21" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="wuZ-Vy-7T9"/>
+                        <constraint firstAttribute="height" constant="40" id="yKd-T2-yql"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                        <color key="baseForegroundColor" red="0.79039143040000004" green="0.44287319219999999" blue="0.35513438920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk0-nr-jud">
+                    <rect key="frame" x="171" y="29" width="51.333333333333343" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="59F-Rl-9NT"/>
+            <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BDx-OW-mji" firstAttribute="leading" secondItem="7CY-4B-ok5" secondAttribute="leading" constant="20" id="BFB-Y4-pYo"/>
+                <constraint firstItem="BDx-OW-mji" firstAttribute="centerY" secondItem="7CY-4B-ok5" secondAttribute="centerY" id="hU2-iN-u72"/>
+                <constraint firstItem="Fk0-nr-jud" firstAttribute="centerY" secondItem="7CY-4B-ok5" secondAttribute="centerY" id="lXi-As-Nve"/>
+                <constraint firstItem="Fk0-nr-jud" firstAttribute="centerX" secondItem="7CY-4B-ok5" secondAttribute="centerX" id="xlm-uO-jMs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="118" y="-218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+    </resources>
+</document>

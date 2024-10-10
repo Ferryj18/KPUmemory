@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="602" id="KGk-i7-Jjw" customClass="DataDetailTVC" customModule="KPUmemory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="602"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="602"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D6u-9D-aPF">
+                        <rect key="frame" x="10" y="10" width="300" height="580"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmo-Rl-Uzh" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VPZ-Tt-cqO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ys-Vg-TDZ" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="40" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3uI-RD-woZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbl-qm-Sbf" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="80" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gGK-Dc-Zp7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-ZR-K5e" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="120" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gqv-tq-3Jf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-kY-M7I" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="160" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jab-W1-3EQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-Js-feM" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="200" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oyi-4e-xUg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiO-lt-BNe" customClass="UILabel">
+                                <rect key="frame" x="0.0" y="240" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uQK-Mj-TxC"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-dS-dR0" userLabel="Img Data">
+                                <rect key="frame" x="0.0" y="280" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="gIi-zF-8tj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Kmo-Rl-Uzh" firstAttribute="top" secondItem="D6u-9D-aPF" secondAttribute="top" id="Ga3-kh-cZS"/>
+                            <constraint firstAttribute="bottom" secondItem="uUu-dS-dR0" secondAttribute="bottom" id="ggf-hU-Hon"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="D6u-9D-aPF" secondAttribute="bottom" constant="10" id="Dg8-Tq-Iwx"/>
+                    <constraint firstItem="D6u-9D-aPF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TLk-qb-MCf"/>
+                    <constraint firstAttribute="trailing" secondItem="D6u-9D-aPF" secondAttribute="trailing" constant="10" id="m1E-k6-foE"/>
+                    <constraint firstItem="D6u-9D-aPF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="u9Q-Qi-a98"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgData" destination="uUu-dS-dR0" id="DAf-Bu-NbD"/>
+                <outlet property="vwAddres" destination="MRe-Js-feM" id="NAy-8l-tKT"/>
+                <outlet property="vwAddress" destination="MRe-Js-feM" id="Xsj-1b-gTM"/>
+                <outlet property="vwDate" destination="eGg-kY-M7I" id="7Ya-X3-Trk"/>
+                <outlet property="vwGender" destination="VyP-ZR-K5e" id="bHf-DD-gCS"/>
+                <outlet property="vwImage" destination="XiO-lt-BNe" id="eVP-0M-Dt1"/>
+                <outlet property="vwNIK" destination="Kmo-Rl-Uzh" id="45J-RF-2v3"/>
+                <outlet property="vwName" destination="1Ys-Vg-TDZ" id="igG-bP-ugr"/>
+                <outlet property="vwPhoneNumb" destination="dbl-qm-Sbf" id="6J4-jf-qH2"/>
+            </connections>
+            <point key="canvasLocation" x="47.328244274809158" y="216.19718309859155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
